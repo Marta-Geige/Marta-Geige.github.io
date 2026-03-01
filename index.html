@@ -17,7 +17,6 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: transparent; /* Header transparent, Bild dahinter */
 }
 
 /* HEADER NAME */
@@ -35,8 +34,8 @@ nav {
     background-color: #122415B3;
     padding: 15px;
     text-align: center;
-    z-index: 1001;
     position: relative;
+    z-index: 1001;
 }
 
 nav a {
@@ -50,24 +49,21 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* HERO-BILD hinter Header */
-.hero-wrapper {
-    position: relative;
-    width: 100%;
-    margin-top: 0; /* Bild startet am oberen Rand der Seite */
-    z-index: 0;
-}
-
+/* HERO-BILD normal */
 .hero {
     width: 100%;
     display: block;
+}
+
+.hero img {
+    width: 100%;
     height: auto;
+    display: block;
 }
 
 /* TEXTBLOCK */
 .container {
     position: relative;
-    z-index: 2;
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 30px;
@@ -88,11 +84,9 @@ nav a:hover {
 }
 </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
-<header class="header">
+<header class="header" id="header">
     <div class="header-name">
         Geigenbau Marta Nahlik
     </div>
@@ -104,12 +98,10 @@ nav a:hover {
     </nav>
 </header>
 
-<!-- HERO-BILD -->
-<div class="hero-wrapper">
-    <img class="hero" src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
-</div>
+<section class="hero" id="hero">
+    <img src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
+</section>
 
-<!-- TEXTBLOCK -->
 <div class="container">
     <h1>Instrumente</h1>
     <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern...</p>
@@ -121,83 +113,22 @@ nav a:hover {
     </div>
 </div>
 
-</body>
-</html>    z-index: 1001; /* über dem Bild */
-    position: relative;
+<script>
+// Dynamische Positionierung des Hero-Bildes
+function adjustHeroPosition() {
+    const header = document.getElementById('header');
+    const hero = document.getElementById('hero');
+    const headerHeight = header.offsetHeight; // Höhe von Name + Menü
+    // Negatives margin-top, damit obere Kante des Hero-Bildes mit oberer Kante des Menüs übereinstimmt
+    hero.style.marginTop = `-${headerHeight}px`;
 }
 
-nav a {
-    color: #f2f2f2;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
+// Initial ausführen
+adjustHeroPosition();
 
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* HERO-BILD FIXED */
-.hero {
-    position: fixed;
-    top: 0; /* beginnt oben */
-    left: 0;
-    width: 100%;
-    height: 100vh; /* volle Höhe des Viewports */
-    object-fit: cover;
-    z-index: 0; /* hinter Menü und Header */
-}
-
-/* TEXTBLOCK STARTET UNTER DEM HERO */
-.container {
-    position: relative;
-    z-index: 2;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: calc(100vh) 30px 60px 30px; /* Abstand: volle Hero-Höhe */
-    background: rgba(242, 242, 242, 0.95);
-}
-
-/* GALERIE */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    margin-top: 30px;
-}
-
-.gallery img {
-    width: 100%;
-    display: block;
-}
-</style>
-</head>
-<body>
-
-<header class="header">
-    <div class="header-name">
-        Geigenbau Marta Nahlik
-    </div>
-    <nav>
-        <a href="#">Instrumente</a>
-        <a href="#">Studium</a>
-        <a href="#">Über mich</a>
-        <a href="#">Kontakt</a>
-    </nav>
-</header>
-
-<img class="hero" src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
-
-<div class="container">
-    <h1>Instrumente</h1>
-    <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern...</p>
-
-    <div class="gallery">
-        <img src="https://via.placeholder.com/400" alt="Bild 1">
-        <img src="https://via.placeholder.com/400" alt="Bild 2">
-        <img src="https://via.placeholder.com/400" alt="Bild 3">
-    </div>
-</div>
+// Auch bei Fenstergröße ändern
+window.addEventListener('resize', adjustHeroPosition);
+</script>
 
 </body>
 </html>
