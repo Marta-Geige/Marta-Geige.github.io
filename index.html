@@ -86,11 +86,11 @@ nav a:hover {
 </head>
 <body>
 
-<header class="header" id="header">
-    <div class="header-name">
+<header class="header">
+    <div class="header-name" id="header-name">
         Geigenbau Marta Nahlik
     </div>
-    <nav>
+    <nav id="menu">
         <a href="#">Instrumente</a>
         <a href="#">Studium</a>
         <a href="#">Über mich</a>
@@ -116,11 +116,10 @@ nav a:hover {
 <script>
 // Dynamische Positionierung des Hero-Bildes
 function adjustHeroPosition() {
-    const header = document.getElementById('header');
+    const headerName = document.getElementById('header-name');
     const hero = document.getElementById('hero');
-    const headerHeight = header.offsetHeight; // Höhe von Name + Menü
-    // Negatives margin-top, damit obere Kante des Hero-Bildes mit oberer Kante des Menüs übereinstimmt
-    hero.style.marginTop = `-${headerHeight}px`;
+    const nameHeight = headerName.offsetHeight; // nur Name
+    hero.style.marginTop = `-${nameHeight}px`; // Bild rückt nur um die Höhe des Namens nach oben
 }
 
 // Initial ausführen
