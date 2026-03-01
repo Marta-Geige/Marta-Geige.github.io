@@ -12,14 +12,7 @@ body {
     background-color: #f2f2f2;
 }
 
-/* HEADER sticky */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-/* HEADER NAME */
+/* NAME (nicht sticky!) */
 .header-name {
     text-align: center;
     padding: 30px 20px 10px 20px;
@@ -29,13 +22,14 @@ body {
     background-color: #f2f2f2;
 }
 
-/* MENÜ */
+/* NUR DAS MENÜ IST STICKY */
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: #122415B3;
     padding: 15px;
     text-align: center;
-    position: relative;
-    z-index: 1001;
 }
 
 nav a {
@@ -49,21 +43,14 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* HERO-BILD */
-.hero {
-    width: 100%;
-    margin-top: -15px; /* zieht Bild exakt bis zur Oberkante des Menüs */
-}
-
+/* HERO */
 .hero img {
     width: 100%;
-    height: auto;
     display: block;
 }
 
 /* TEXTBLOCK */
 .container {
-    position: relative;
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 30px;
@@ -84,19 +71,19 @@ nav a:hover {
 }
 </style>
 </head>
+
 <body>
 
-<header class="header">
-    <div class="header-name">
-        Geigenbau Marta Nahlik
-    </div>
-    <nav>
-        <a href="#">Instrumente</a>
-        <a href="#">Studium</a>
-        <a href="#">Über mich</a>
-        <a href="#">Kontakt</a>
-    </nav>
-</header>
+<div class="header-name">
+    Geigenbau Marta Nahlik
+</div>
+
+<nav>
+    <a href="#">Instrumente</a>
+    <a href="#">Studium</a>
+    <a href="#">Über mich</a>
+    <a href="#">Kontakt</a>
+</nav>
 
 <section class="hero">
     <img src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
@@ -105,12 +92,6 @@ nav a:hover {
 <div class="container">
     <h1>Instrumente</h1>
     <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern...</p>
-    
-    <div class="gallery">
-        <img src="https://via.placeholder.com/400" alt="Bild 1">
-        <img src="https://via.placeholder.com/400" alt="Bild 2">
-        <img src="https://via.placeholder.com/400" alt="Bild 3">
-    </div>
 </div>
 
 </body>
