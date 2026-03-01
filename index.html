@@ -50,22 +50,24 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* HERO-BILD */
-.hero {
-    width: 100%;
-    overflow: hidden;
+/* HERO-BILD hinter Header */
+.hero-wrapper {
     position: relative;
+    width: 100%;
+    margin-top: 0; /* Bild startet am oberen Rand der Seite */
+    z-index: 0;
 }
 
-.hero img {
+.hero {
     width: 100%;
-    height: auto;
     display: block;
+    height: auto;
 }
 
 /* TEXTBLOCK */
 .container {
     position: relative;
+    z-index: 2;
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 30px;
@@ -89,7 +91,8 @@ nav a:hover {
 
 <body>
 
-<header class="header" id="header">
+<!-- HEADER -->
+<header class="header">
     <div class="header-name">
         Geigenbau Marta Nahlik
     </div>
@@ -101,10 +104,12 @@ nav a:hover {
     </nav>
 </header>
 
-<section class="hero" id="hero">
-    <img src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
-</section>
+<!-- HERO-BILD -->
+<div class="hero-wrapper">
+    <img class="hero" src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
+</div>
 
+<!-- TEXTBLOCK -->
 <div class="container">
     <h1>Instrumente</h1>
     <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern...</p>
@@ -115,22 +120,6 @@ nav a:hover {
         <img src="https://via.placeholder.com/400" alt="Bild 3">
     </div>
 </div>
-
-<script>
-// Dynamische Positionierung des Hero-Bildes
-function adjustHeroPosition() {
-    const header = document.getElementById('header');
-    const hero = document.getElementById('hero');
-    const headerHeight = header.offsetHeight; // Header + Menü
-    hero.style.marginTop = `-${headerHeight}px`;
-}
-
-// Initial ausführen
-adjustHeroPosition();
-
-// Bei Fenstergröße ändern
-window.addEventListener('resize', adjustHeroPosition);
-</script>
 
 </body>
 </html>
