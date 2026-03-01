@@ -48,11 +48,32 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* HERO-BILD FIXIERT */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Höhe des Hero-Bildes */
+    overflow: hidden;
+}
+
+.hero img {
+    position: fixed; /* Bild bleibt beim Scrollen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px; /* gleiche Höhe wie .hero */
+    object-fit: cover;
+    z-index: 1; /* unter Text */
+}
+
+/* CONTENT ÜBERDECKT DAS BILD */
 .container {
+    position: relative;
+    z-index: 2; /* über dem Bild */
+    background: rgba(242, 242, 242, 0.9); /* leicht transparent für Hero-Look */
     max-width: 1000px;
-    margin: 40px auto;
-    background: #f2f2f2;
-    padding: 30px;
+    margin: 0 auto;
+    padding: 60px 30px;
 }
 
 /* GALERIE */
@@ -67,35 +88,6 @@ nav a:hover {
     width: 100%;
     display: block;
 }
-
-/* HERO BILD */
-.hero {
-    width: 100%;
-}
-
-.hero img {
-    width: 100%;
-    height: auto; 
-    display: block;
-}
-
-.hero img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* CONTENT ÜBERDECKT DAS BILD */
-.container {
-    position: relative;
-    background: #f2f2f2;
-    padding: 60px 30px;
-    z-index: 2;
-}
-     .hero + .container {
-    padding-top: 20px; /* Luft zwischen Bild und Text */
-}
-    
 </style>
 </head>
 
@@ -115,17 +107,16 @@ nav a:hover {
 </header>
 
 <section class="hero">
-    <img src="https:images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
+    <img src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
 </section>
 
 <div class="container">
     <h1>Instrumente</h1>
-    <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern. Ziel ist stets ein stilistisch authentisches Instrument, das sowohl klanglich als auch spieltechnisch den Anforderungen der historisch informierten Aufführungspraxis gerecht wird.
-
-Ich fertige Geigen, Bratschen, Violoncelli und Gamben auf Grundlage historischer Modelle, individuell ausgearbeitet nach meinem aktuellen Wissensstand und Verständnis für Klang und Stil.</p>
-Meine Arbeit gründet auf breiten Recherchen, die das Fundament für das Verständnis von Bauweisen und Klangvorstellungen bilden. Dabei spielen historische Fertigungstechniken eine wesentliche Rolle, da sie Klang, Spielgefühl und Erscheinungsbild eines Instruments wesentlich prägen. 
-
-Meine bisherigen Instrumente orientierten sich etwa an Modellen der Gebrüder Amati, Jakob Stainer, Giovanni Paolo Maggini und Gasparo da Salò. 
+    <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern. Ziel ist stets ein stilistisch authentisches Instrument, das sowohl klanglich als auch spieltechnisch den Anforderungen der historisch informierten Aufführungspraxis gerecht wird.</p>
+    <p>Ich fertige Geigen, Bratschen, Violoncelli und Gamben auf Grundlage historischer Modelle, individuell ausgearbeitet nach meinem aktuellen Wissensstand und Verständnis für Klang und Stil.</p>
+    <p>Meine Arbeit gründet auf breiten Recherchen, die das Fundament für das Verständnis von Bauweisen und Klangvorstellungen bilden. Dabei spielen historische Fertigungstechniken eine wesentliche Rolle, da sie Klang, Spielgefühl und Erscheinungsbild eines Instruments wesentlich prägen.</p>
+    <p>Meine bisherigen Instrumente orientierten sich etwa an Modellen der Gebrüder Amati, Jakob Stainer, Giovanni Paolo Maggini und Gasparo da Salò.</p>
+    
     <div class="gallery">
         <img src="https://via.placeholder.com/400" alt="Bild 1">
         <img src="https://via.placeholder.com/400" alt="Bild 2">
