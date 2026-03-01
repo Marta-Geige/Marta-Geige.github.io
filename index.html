@@ -9,7 +9,6 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
 }
 
 /* HEADER sticky */
@@ -17,7 +16,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: transparent; /* Header transparent, Bild dahinter */
+    background: transparent;
 }
 
 /* HEADER NAME */
@@ -35,7 +34,7 @@ nav {
     background-color: #122415B3;
     padding: 15px;
     text-align: center;
-    z-index: 1001;
+    z-index: 1001; /* über dem Bild */
     position: relative;
 }
 
@@ -50,27 +49,24 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* HERO-BILD hinter Header */
-.hero-wrapper {
-    position: relative;
-    width: 100%;
-    margin-top: 0; /* Bild startet am oberen Rand der Seite */
-    z-index: 0;
-}
-
+/* HERO-BILD FIXED */
 .hero {
+    position: fixed;
+    top: 0; /* beginnt oben */
+    left: 0;
     width: 100%;
-    display: block;
-    height: auto;
+    height: 100vh; /* volle Höhe des Viewports */
+    object-fit: cover;
+    z-index: 0; /* hinter Menü und Header */
 }
 
-/* TEXTBLOCK */
+/* TEXTBLOCK STARTET UNTER DEM HERO */
 .container {
     position: relative;
     z-index: 2;
     max-width: 1000px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: calc(100vh) 30px 60px 30px; /* Abstand: volle Hero-Höhe */
     background: rgba(242, 242, 242, 0.95);
 }
 
@@ -88,10 +84,8 @@ nav a:hover {
 }
 </style>
 </head>
-
 <body>
 
-<!-- HEADER -->
 <header class="header">
     <div class="header-name">
         Geigenbau Marta Nahlik
@@ -104,16 +98,12 @@ nav a:hover {
     </nav>
 </header>
 
-<!-- HERO-BILD -->
-<div class="hero-wrapper">
-    <img class="hero" src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
-</div>
+<img class="hero" src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
 
-<!-- TEXTBLOCK -->
 <div class="container">
     <h1>Instrumente</h1>
     <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten nach historischen Vorbildern...</p>
-    
+
     <div class="gallery">
         <img src="https://via.placeholder.com/400" alt="Bild 1">
         <img src="https://via.placeholder.com/400" alt="Bild 2">
