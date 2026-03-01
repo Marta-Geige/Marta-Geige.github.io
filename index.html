@@ -116,10 +116,15 @@ nav a:hover {
 <script>
 // Dynamische Positionierung des Hero-Bildes
 function adjustHeroPosition() {
-    const headerName = document.getElementById('header-name');
+    const header = document.querySelector('.header');
+    const menu = document.getElementById('menu');
     const hero = document.getElementById('hero');
-    const nameHeight = headerName.offsetHeight; // nur Name
-    hero.style.marginTop = `-${nameHeight}px`; // Bild rückt nur um die Höhe des Namens nach oben
+
+    const headerHeight = header.offsetHeight; // Höhe Name + Menü
+    const menuHeight = menu.offsetHeight;     // Höhe nur Menü
+
+    // Hero-Bild nach oben verschieben, so dass obere Kante auf Menü-Oberkante sitzt
+    hero.style.marginTop = `-${headerHeight - menuHeight}px`;
 }
 
 // Initial ausführen
