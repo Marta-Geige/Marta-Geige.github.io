@@ -1,37 +1,31 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Geigenbau-Nahlik</title>
-
-<style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
 }
 
-/* NAME bleibt normal */
+/* STICKY HEADER (Name + Menü) */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #f2f2f2;
+}
+
+/* NAME */
 .header-name {
     text-align: center;
     padding: 30px 20px 10px 20px;
     font-size: 32px;
     font-weight: bold;
     color: #122415;
-    background-color: #f2f2f2;
 }
 
-/* MENÜ FIXIERT */
+/* MENÜ */
 nav {
-    position: fixed;
-    top: 70px; /* Höhe des Namensbereichs */
-    left: 0;
-    width: 100%;
     background-color: #122415B3;
     padding: 15px;
     text-align: center;
-    z-index: 1000;
 }
 
 nav a {
@@ -41,15 +35,18 @@ nav a {
     font-weight: bold;
 }
 
-/* HERO beginnt ganz oben */
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* HERO */
+.hero {
+    margin: 0;
+}
+
 .hero img {
     width: 100%;
     display: block;
-}
-
-/* Abstand nach oben damit nichts unter Menü liegt */
-.hero {
-    margin-top: 120px; 
 }
 
 /* TEXTBLOCK */
@@ -59,30 +56,29 @@ nav a {
     padding: 60px 30px;
     background: rgba(242, 242, 242, 0.95);
 }
-</style>
-</head>
 
-<body>
 
-<div class="header-name">
-    Geigenbau Marta Nahlik
-</div>
+/* =========================
+   MOBILE OPTIMIERUNG
+   ========================= */
 
-<nav>
-    <a href="#">Instrumente</a>
-    <a href="#">Studium</a>
-    <a href="#">Über mich</a>
-    <a href="#">Kontakt</a>
-</nav>
+@media (max-width: 768px) {
 
-<section class="hero">
-    <img src="images/IMG_4548.jpeg" alt="Werkstatt oder Instrument">
-</section>
+    .header-name {
+        font-size: 22px;
+        padding: 20px 15px 10px 15px;
+    }
 
-<div class="container">
-    <h1>Instrumente</h1>
-    <p>In meiner Arbeit liegt der Schwerpunkt auf der Fertigung von hochwertigen Streichinstrumenten...</p>
-</div>
+    nav {
+        padding: 10px;
+    }
 
-</body>
-</html>
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+}
