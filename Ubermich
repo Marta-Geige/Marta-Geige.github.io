@@ -1,1 +1,48 @@
 
+<body>
+
+<header>
+     <div class="header-name">
+    <span>Geigenbau Marta Nahlik</span>
+</div>
+
+    <nav>
+        <span class="hamburger">&#9776;</span>
+        <div class="menu-links">
+          <a href="instrumente.html">Instrumente1</a>
+         <a href="studium.html">Studium</a>
+         <a href="ueber-mich.html">Über mich</a>
+         <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+   <h1>Über mich</h1>
+      <p>Das Geigenbauhandwerk fasziniert mich schon seit meiner Schulzeit. 
+       Mich begeistert die Kombination aus Geisteswissenschaft, Naturwissenschaft und Handwerk, 
+       die im Geigenbau zusammenkommt.</p>
+   <p> 
+Dennoch studierte ich zunächst Musikwissenschaften an der Universität Leipzig. 
+       Hier spezialisierte ich mich auf die Instrumentenkunde. </p>
+<p>
+Das Handwerk erlernte ich drei Jahre lang bei André Mehler in Leipzig und erhielt 
+   Einblicke in die Welt der historisch informierten Bau- und Aufführungspraxis. 
+   Im Anschluss, 2020, ging ich zum Studium nach Markneukirchen an den Studiengang Musikinstrumentenbau 
+   der Westsächsischen Hochschule Zwickau, den ich im Sommer 2025 erfolgreich abschloss. 
+   Seit Herbst 2025 darf ich den Meistertitel im Handwerk führen.</p>
+   <p>
+   Im Rahmen meines Studiums konnte ich in verschiedenen Werkstätten in Deutschland, Österreich, Chile, Bolivien und Argentinien 
+   wertvolle Erfahrungen Sammeln. 
+</p>
+   <p>
+2024 bis 2026 arbeitete ich teils in der Werkstatt von Sebastian Mende mit. 
+      Schon währenddessen führte ich meine eigene Werkstatt.</p>
+</div>
+
+<footer>
+   Marta Nahlik 2026
+</footer>
+
+
+</body>
