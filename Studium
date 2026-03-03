@@ -1,1 +1,29 @@
+<body>
 
+<header>
+   <div class="header-name">
+    <span>Geigenbau Marta Nahlik</span>
+</div>
+
+    <nav>
+        <span class="hamburger">&#9776;</span>
+        <div class="menu-links">
+          <a href="instrumente.html">Instrumente1</a>
+         <a href="studium.html">Studium</a>
+         <a href="ueber-mich.html">Über mich</a>
+         <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Studium</h1>
+    <p>Begleitend zum Bau von Instrumenten vertiefe ich mich auf theoretischer Ebene in angrenzende Themenfelder, 
+       um historische Fertigungsweisen, Stilistiken und Anforderungen besser zu verstehen. 
+       Meine Recherche stützt sich dabei auf den Austausch mit Kolleg*innen, Fachliteratur und die Arbeit an Originalinstrumenten zumeist in Museen. </p>
+</div>
+<footer>
+   Marta Nahlik 2026
+</footer>
+
+</body>
