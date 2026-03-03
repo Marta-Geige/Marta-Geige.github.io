@@ -1,1 +1,31 @@
 
+<body>
+
+<header>
+   <div class="header-name">
+    <span>Geigenbau Marta Nahlik</span>
+</div>
+
+    <nav>
+        <span class="hamburger">&#9776;</span>
+        <div class="menu-links">
+          <a href="instrumente1.html">Instrumente</a>
+         <a href="studium.html">Studium</a>
+         <a href="ueber-mich.html">Über mich</a>
+         <a href="kontakt.html">Kontakt</a>
+        </div>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Kontakt</h1>
+    <p>Meine Werkstatt befindet sich in Weimar. Da ich derzeit keine regelmäßigen Öffnungszeiten anbieten kann, bitte ich um vorherige Terminabsprache.
+</p><p>
+Ich bin erreichbar per Mail: marta@geigenbau-nahlik.de</p> 
+</div>
+
+<footer>
+   Marta Nahlik 2026
+</footer>
+
+</body>
