@@ -1,0 +1,16 @@
+<body>
+
+<header>
+   <!-- dein kompletter Header -->
+</header>
+
+<div class="container">
+   <h1>Instrumente</h1>
+   <p>Dein Text...</p>
+</div>
+
+<footer>
+   <!-- dein Footer -->
+</footer>
+
+</body>
