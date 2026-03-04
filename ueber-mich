@@ -1,4 +1,12 @@
 
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich – Geigenbau Marta Nahlik</title>
+    <link rel="stylesheet" href="style.css"> <!-- Passe den Pfad zu deinem CSS an -->
+</head>
 <body>
 
 <header>
@@ -46,3 +54,4 @@ Das Handwerk erlernte ich drei Jahre lang bei André Mehler in Leipzig und erhie
 
 
 </body>
+</html>
