@@ -85,6 +85,29 @@ nav .menu-links {
     display: block;
 }
 
+   /* =========================
+  RUNDE BILDER
+   ========================= */
+
+.block {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.block.reverse {
+  flex-direction: row-reverse;
+}
+
+.bild {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
 /* =========================
    TEXTBLOCK
    ========================= */
