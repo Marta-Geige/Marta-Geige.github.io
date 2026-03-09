@@ -90,11 +90,24 @@ nav .menu-links {
    ========================= */
 
 .block {
+  margin: 80px 0;
+  padding: 0 120px;
+  align-items: center;
+  gap: 40px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.inhalt {
   display: flex;
   align-items: center;
   gap: 40px;
-  margin: 80px 0;
-  padding: 0 120px;
+}
+
+.inhalt.reverse {
+  flex-direction: row-reverse;
 }
 
 .block p {
