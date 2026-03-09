@@ -92,8 +92,15 @@ nav .menu-links {
 .block {
   display: flex;
   align-items: center;
-  gap: 30px;
-  margin: 40px 0;
+  gap: 40px;
+  margin: 80px 0;
+  padding: 0 120px;
+}
+
+.block p {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 18px;
 }
 
 .block.reverse {
@@ -199,6 +206,25 @@ footer a:hover {
     .logo {
         max-height: 30px;
     }
+}
+
+   @media (max-width: 700px) {
+
+  .block {
+    flex-direction: column;
+    text-align: center;
+    padding: 0 30px;
+  }
+
+  .block.reverse {
+    flex-direction: column;
+  }
+
+  .bild {
+    width: 180px;
+    height: 180px;
+  }
+
 }
 
     /* Hamburger anzeigen */
