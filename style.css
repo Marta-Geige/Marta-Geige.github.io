@@ -123,6 +123,9 @@ nav .menu-links {
   border-radius: 50%;
 }
 
+.text p {
+  margin-left: 0;
+}
 
 /* =========================
    TEXTBLOCK
