@@ -139,11 +139,11 @@ h1 {
    INSTRUMENTE
    ========================= */
 .instrument {
-  flex-direction: column; 
-   align-items: center; 
-   text-align: center;
-   gap: 20px;
-   margin-bottom: 60px;
+ display: grid;
+    grid-template-columns: 220px 1fr; /* Bild: 220px, Text: Rest */
+    gap: 40px;                        /* Abstand zwischen Bild und Text */
+    align-items: start;
+    margin-bottom: 60px;
 }
 
 .instrument img {
