@@ -300,5 +300,22 @@ footer a:hover {
 }
 
 .lb-close {
+  background: none !important;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: auto;
+  height: auto;
   opacity: 1 !important;
+}
+
+.lb-close:after {
+  content: "×";          /* typografisches Kreuz */
+  font-size: 32px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.lb-close:hover:after {
+  opacity: 0.7;
 }
