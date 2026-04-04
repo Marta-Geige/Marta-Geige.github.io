@@ -298,3 +298,7 @@ footer a:hover {
         text-align: left;
     }
 }
+
+.lb-close {
+  opacity: 1 !important;
+}
