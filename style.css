@@ -127,6 +127,20 @@ nav .menu-links {
   margin-left: 0;
 }
 
+.instrument {
+  margin-bottom: 40px;
+}
+
+.instrument img {
+  width: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.instrument p {
+  max-width: 500px;
+}
+
 /* =========================
    TEXTBLOCK
    ========================= */
