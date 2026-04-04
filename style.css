@@ -147,8 +147,7 @@ h1 {
 }
 
 .instrument img {
-    flex: 0 0 220px;          /* Bild immer 220px breit */
-    width: 220px;
+    width: 220px;      /* Desktop-Vorschau */
     height: auto;
     border-radius: 6px;
     cursor: pointer;
@@ -286,9 +285,9 @@ footer a:hover {
         gap: 20px;
     }
 
-    .instrument img {
+     .instrument img {
         width: 100%;
-        max-width: 260px;
+        max-width: 220px; /* Bild bleibt elegant, nicht riesig */
     }
 
     .instrument-text {
