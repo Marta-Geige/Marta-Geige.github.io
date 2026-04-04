@@ -1,4 +1,3 @@
-
 /* =========================
    GRUNDSTILE
    ========================= */
@@ -6,10 +5,13 @@ body {
     margin: 0;
     font-family: 'DM Sans', sans-serif;
     background-color: #f2f2f2;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #222;
 }
 
 /* =========================
-   STICKY HEADER (Name + Menü)
+   HEADER
    ========================= */
 header {
     position: sticky;
@@ -18,44 +20,47 @@ header {
     background-color: #f2f2f2;
 }
 
+.header-name {
+    text-align: center;
+    padding: 30px 20px 10px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #122415;
+    letter-spacing: 0.5px;
+}
+
 .header-name a {
     text-decoration: none;
     color: inherit;
 }
 
-/* NAME */
-.header-name {
-    text-align: center;
-    padding: 30px 20px 10px 20px;
-    font-size: 32px;
-    font-weight: bold;
-    color: #122415;
-}
-   
-.header-name {
-    letter-spacing: 0.5px;
-}   
-
-/* MENÜ */
+/* =========================
+   NAVIGATION
+   ========================= */
 nav {
-    background-color: #122415CC; /* 80% Deckkraft */
+    background-color: #122415CC;
     padding: 15px;
     text-align: center;
     position: relative;
+}
+
+nav .menu-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav a {
     color: #f2f2f2;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: normal;
 }
 
 nav a:hover {
     opacity: 0.7;
 }
 
-/* Hamburger-Button */
+/* Hamburger */
 .hamburger {
     display: none;
     font-size: 28px;
@@ -66,136 +71,27 @@ nav a:hover {
     top: 12px;
 }
 
-/* Menü-Links container */
-nav .menu-links {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
 /* =========================
-   HERO SECTION
+   HERO
    ========================= */
-.hero {
-    margin: 0;
-}
-
 .hero img {
     width: 100%;
     display: block;
 }
 
-   /* =========================
-  RUNDE BILDER
-   ========================= */
-
-.block {
-  margin: 80px 0;
-  padding: 0 120px;
-  align-items: center;
-  gap: 40px;
-}
-
-.section-title {
-  margin-bottom: 20px;
-}
-
-.inhalt {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.inhalt.reverse {
-  flex-direction: row-reverse;
-}
-
-.block p {
-  max-width: 600px;
-  line-height: 1.6;
-  font-size: 18px;
-}
-
-.bild {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.text p {
-  margin-left: 0;
-}
-.instrument {
-  display: flex;
-  align-items: flex-start;
-  gap: 40px;
-  margin-bottom: 60px;
-}
-
-.instrument img {
-  width: 220px;              /* kleiner & eleganter */
-  height: auto;
-  border-radius: 6px;
-  cursor: pointer;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
-}
-
-.instrument img:hover {
-  transform: scale(1.02);    /* ganz subtil */
-}
-
-.instrument-text {
-  max-width: 520px;
-}
-
-.instrument-text h2 {
-  margin-top: 0;
- margin-bottom: 10px;
-  font-weight: 400;
-  letter-spacing: 0.5px;
-}
-
-.instrument-text p {
-  margin-top: 10px;
-}
-
 /* =========================
-   TEXTBLOCK
+   LAYOUT / CONTAINER
    ========================= */
 .container {
-    max-width: 1000px;
+    max-width: 820px;
     margin: 0 auto;
     padding: 60px 30px;
     background: rgba(242, 242, 242, 0.95);
 }
 
-   /* =========================
-   TYPOGRAFIE FEINSCHLIFF
+/* =========================
+   TYPOGRAFIE
    ========================= */
-
-body {
-    font-size: 18px;
-    line-height: 1.75;
-    color: #222;
-}
-
-/* Container-Text */
-.container {
-    max-width: 820px;   /* etwas schmaler = eleganter */
-    margin: 0 auto;
-}
-
-.container p {
-    line-height: 1.8;
-}
-
-.container p {
-    margin-bottom: 22px;
-}
-
-/* Überschriften */
 h1 {
     font-size: 28px;
     font-weight: 400;
@@ -203,11 +99,84 @@ h1 {
     letter-spacing: 0.7px;
 }
 
+.container p {
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
 /* =========================
-   FOOTER (Quicklinks + Kontakt)
+   RUNDE BILDER SEKTION
+   ========================= */
+.block {
+    margin: 80px 0;
+    padding: 0 120px;
+}
+
+.inhalt {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.inhalt.reverse {
+    flex-direction: row-reverse;
+}
+
+.block p {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bild {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* =========================
+   INSTRUMENTE
+   ========================= */
+.instrument {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.instrument img {
+    width: 220px;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease;
+}
+
+.instrument img:hover {
+    transform: scale(1.02);
+}
+
+.instrument-text {
+    max-width: 520px;
+}
+
+.instrument-text h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.instrument-text p {
+    margin-top: 10px;
+}
+
+/* =========================
+   FOOTER
    ========================= */
 footer {
-    background-color: #122415CC; /* gleiche Farbe wie Menü */
+    background-color: #122415CC;
     padding: 20px;
     text-align: center;
     color: #f2f2f2;
@@ -217,18 +186,23 @@ footer a {
     color: #f2f2f2;
     margin: 0 15px;
     text-decoration: none;
-    font-weight: normal;
 }
 
 footer a:hover {
     opacity: 0.7;
 }
 
-/* =========================
-   MOBILE OPTIMIERUNG
-   ========================= */
+/* Logo */
+.logo {
+    max-height: 40px;
+    width: auto;
+    object-fit: contain;
+}
 
-   @media (max-width: 768px) {
+/* =========================
+   MOBILE (TABLET)
+   ========================= */
+@media (max-width: 768px) {
 
     body {
         font-size: 16px;
@@ -240,45 +214,24 @@ footer a:hover {
         margin-bottom: 20px;
     }
 
-}
-@media (max-width: 768px) {
-
     .header-name {
         font-size: 22px;
-        padding: 20px 15px 10px 15px;
+        padding: 20px 15px 10px;
     }
 
- @media (max-width: 768px) {
     .logo {
         max-height: 30px;
     }
-}
 
-   @media (max-width: 700px) {
+    .container {
+        padding: 40px 20px;
+    }
 
-  .block {
-    flex-direction: column;
-    text-align: center;
-    padding: 0 30px;
-  }
-
-  .block.reverse {
-    flex-direction: column;
-  }
-
-  .bild {
-    width: 180px;
-    height: 180px;
-  }
-
-}
-
-    /* Hamburger anzeigen */
+    /* Navigation */
     .hamburger {
         display: block;
     }
 
-    /* Menü-Links mobil verstecken standardmäßig */
     nav .menu-links {
         display: none;
         flex-direction: column;
@@ -293,47 +246,55 @@ footer a:hover {
         margin: 10px 0;
     }
 
-    .container {
-        padding: 40px 20px;
-    }
-
     footer a {
         display: block;
         margin: 8px 0;
     }
 }
 
-   .logo {
-    max-height: 40px;
-    width: auto;
-    object-fit: contain;
-}
-
+/* =========================
+   MOBILE (HANDY)
+   ========================= */
 @media (max-width: 700px) {
 
-  .instrument {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-  }
+    /* Runde Bilder */
+    .block {
+        padding: 0 30px;
+        text-align: center;
+    }
 
-  .instrument img {
-    width: 100%;
-    max-width: 260px;   /* bleibt elegant, nicht riesig */
-  }
+    .inhalt,
+    .inhalt.reverse {
+        flex-direction: column;
+    }
 
-  .instrument-text {
-    max-width: 100%;
-  }
-   
-   .instrument-text p {
-    text-align: left;
-  }
+    .bild {
+        width: 180px;
+        height: 180px;
+    }
 
+    /* Instrumente */
+    .instrument {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
 
-  .instrument-text h2 {
-    font-size: 20px;
-  }
+    .instrument img {
+        width: 100%;
+        max-width: 260px;
+    }
 
+    .instrument-text {
+        max-width: 100%;
+    }
+
+    .instrument-text h2 {
+        font-size: 20px;
+    }
+
+    .instrument-text p {
+        text-align: left;
+    }
 }
