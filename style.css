@@ -326,10 +326,14 @@ footer a:hover {
   .instrument-text {
     max-width: 100%;
   }
+   
+   .instrument-text p {
+    text-align: left;
+  }
+
 
   .instrument-text h2 {
     font-size: 20px;
   }
 
 }
-   
