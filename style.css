@@ -126,21 +126,39 @@ nav .menu-links {
 .text p {
   margin-left: 0;
 }
-
 .instrument {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
 }
 
 .instrument img {
-  width: 300px;
-  border-radius: 8px;
+  width: 220px;              /* kleiner & eleganter */
+  height: auto;
+  border-radius: 6px;
   cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
 }
 
-.instrument p {
-  max-width: 500px;
+.instrument img:hover {
+  transform: scale(1.02);    /* ganz subtil */
 }
 
+.instrument-text {
+  max-width: 520px;
+}
+
+.instrument-text h2 {
+  margin-top: 0;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.instrument-text p {
+  margin-top: 10px;
+}
 /* =========================
    TEXTBLOCK
    ========================= */
