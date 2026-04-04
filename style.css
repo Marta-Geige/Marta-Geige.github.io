@@ -152,6 +152,7 @@ nav .menu-links {
 
 .instrument-text h2 {
   margin-top: 0;
+ margin-bottom: 10px;
   font-weight: 400;
   letter-spacing: 0.5px;
 }
@@ -159,6 +160,7 @@ nav .menu-links {
 .instrument-text p {
   margin-top: 10px;
 }
+
 /* =========================
    TEXTBLOCK
    ========================= */
