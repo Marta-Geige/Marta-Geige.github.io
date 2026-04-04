@@ -147,7 +147,7 @@ h1 {
 }
 
 .instrument img {
-    width: 220px;      /* Desktop-Vorschau */
+    width: 280px;      /* Desktop-Vorschau */
     height: auto;
     border-radius: 6px;
     cursor: pointer;
