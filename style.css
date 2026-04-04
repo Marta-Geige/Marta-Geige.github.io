@@ -148,6 +148,7 @@ h1 {
 
 .instrument img {
     flex: 0 0 220px;          /* Bild immer 220px breit */
+    width: 220px;
     height: auto;
     border-radius: 6px;
     cursor: pointer;
