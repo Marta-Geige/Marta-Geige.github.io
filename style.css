@@ -160,7 +160,6 @@ h1 {
 }
 
 .instrument-text {
-    flex: 1;                   /* Text nimmt den restlichen Platz ein */
     min-width: 360px;          /* nicht zu schmal */
     max-width: 520px;          /* nicht zu breit */
 }
