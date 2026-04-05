@@ -327,3 +327,14 @@ a[data-lightbox] {
 .lb-close:hover:after {
   opacity: 0.7;
 }
+
+.lb-data .lb-close {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.lb-closeContainer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
