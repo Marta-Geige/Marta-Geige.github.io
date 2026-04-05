@@ -303,6 +303,10 @@ footer a:hover {
    
 }
 
+a[data-lightbox] {
+  display: inline-block;
+}
+
 .lb-close {
   background: none !important;
   position: absolute;
