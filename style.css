@@ -330,3 +330,9 @@ a[data-lightbox] {
   top: 10px;
   right: 10px;
 }
+
+.hidden-gallery {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
