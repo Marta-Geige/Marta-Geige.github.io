@@ -308,11 +308,6 @@ a[data-lightbox] {
   display: inline-block;
 }
 
-.lb-data .lb-close {
-  display: block !important;
-  opacity: 1 !important;
-}
-
 .hidden-gallery {
     visibility: hidden;
     height: 0;
