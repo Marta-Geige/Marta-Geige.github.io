@@ -143,6 +143,7 @@ h1 {
     grid-template-columns: 280px 1fr; /* Bild: 280px, Text: Rest */
     gap: 40px;                        /* Abstand zwischen Bild und Text */
     align-items: start;
+    margin-top: 100px; 
     margin-bottom: 60px;
 }
 
