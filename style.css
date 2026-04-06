@@ -308,15 +308,6 @@ a[data-lightbox] {
   display: inline-block;
 }
 
-.lb-close {
-  background: none !important;
-  position: absolute;
-  top: 20px;
-  right: 25px;
-  width: auto;
-  height: auto;
-  opacity: 1 !important;
-}
 
 .lb-close:after {
   content: "×";          /* typografisches Kreuz */
