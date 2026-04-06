@@ -106,16 +106,22 @@ Während eines der Instrumente mit einem herkömmlichen Bassbalken gebaut wurde,
 <footer>
    Marta Nahlik 2026
 </footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  if (typeof jQuery === "undefined") {
+    document.write('<script src="js/jquery.min.js"><\/script>');
+  }
+</script>
+
 <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 
 <script>
   lightbox.option({
-    'resizeDuration': 200,
-    'wrapAround': true,
-    'showImageNumberLabel': false,
-    'alwaysShowNavOnTouchDevices': true
+    resizeDuration: 200,
+    wrapAround: true,
+    showImageNumberLabel: false,
+    alwaysShowNavOnTouchDevices: true
   });
 </script>
     
